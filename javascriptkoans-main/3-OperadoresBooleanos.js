@@ -50,12 +50,12 @@ describe('3-OperadoresBooleanos.js', () => {
     expect((true || true) || (false && true)).toBe(true)
     // Ahora tú
     expect((true || true) || (false && true)).toBe(true)
-    expect((true || true) || (false && true) || false).toBe(false)
+    expect((true || true) || (false && true) || false).toBe(true)
     // Como en las matemáticas, el orden importa ;)
     expect((true || true) || (false && true) && false).toBe(true)
-    expect((true || true) || (false && true) && (false && true)).toBe(RellenameCorrectamente)
+    expect((true || true) || (false && true) && (false && true)).toBe(true)
     // Bonus track
-    expect(((true || true) || (false && true) && (false && true)) || ((true || true) || (false && true) && false)).toBe(RellenameCorrectamente)
+    expect(((true || true) || (false && true) && (false && true)) || ((true || true) || (false && true) && false)).toBe(true)
   })
   // ¿Llamó a urgencias?
   // Te prometo que esta locura te será muy útil en el futuro.
