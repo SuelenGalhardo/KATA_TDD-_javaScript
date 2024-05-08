@@ -19,11 +19,12 @@ describe('1-Tests.js', () => {
     // tienes que hacer, que el valor que hay dentro del expect sea
     // el mismo que hay dentro del toBe. (Recuerda salvar los cambios de este
     // fichero y recargar el navegador)
-    expect('¡Arreglame, please!').toBe('Arreglado')
+    expect('Arreglado').toBe('Arreglado')
   })
   // ¡Bien! Has puesto en verde tu primer test, seguro que lo has podido comprobar
   // en tu navegador. ¡Ahora a ponerlos todos en verde!
   // ¡Cuidado, este test es muy difícil!
+
   it('!NO, PUEDES, PASAR!', () => {
     // Ok. Como se puede ver no es tan difícil como parece.
     // Aprovecho para explicar una situación con la que te puedes encontrar.
@@ -44,7 +45,7 @@ describe('1-Tests.js', () => {
     // empieza el test (que es el "it") cambiar el "it" por "skip". Si guardas y
     // miras el navegador verás que está en gris y te dará error el siguiente test.
     // El día que lo quieras retomar, sencillamente revierte el cambio. skip -> it
-    expect(RellenameCorrectamente).toBe('Pues no es tan difícil')
+    expect('Pues no es tan difícil').toBe('Pues no es tan difícil')
   })
   // ¡MUY BIEN! Ya nos vemos en el siguiente archivo.
   // P.D.: TestConsejo, si estás usando GIT o un control de versiones y no lo has
