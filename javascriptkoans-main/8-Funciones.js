@@ -4,13 +4,23 @@ describe('8-Funciones.js', () => {
   // Hasta ahora con lo que hemos aprendido las variables contienen sólo valores,
   // con las funciones podemos asignarle operaciones. Es más fácil de entender
   // con la práctica. Así que vamos a ello.
+
   it('hay que definirlas para poder usarlas', () => {
+
+
     // Hay que diferenciar muy bien cuando definimos una función de cuando la
     // ejecutamos, aunque siempre hay que definirla antes de ejecutarla/usarla.
     // Así se puede definir una función.
+
+
     let funcionParaSumar = function(unNumero, otroNumero) {
+
+  
+    
       return unNumero + otroNumero
     }
+
+
     // Vale, parte por parte.
     // Como se puede ver, hemos asignado a la variable "funcionParaSumar" una función.
     // Esta función necesita recibir dos números cualquiera (que usarían con los
@@ -19,16 +29,21 @@ describe('8-Funciones.js', () => {
     // lo único que va a ejecutar es que nos devuelva el resultado de la suma
     // de sus argumentos, que es el valor que tenga justo después de la palabra
     // "return".
+
+
     expect(funcionParaSumar(4, 1)).toBe(5)
+
+
     // Aquí funcionParaSumar al poner los paréntesis, le decimos que la vamos a
     // ejecutar y entre paréntesis le pasamos los argumentos que queremos que sume
     // el 4 se le asignará al argumento que se llama "unNumero" porque van primero y
     // luego el 1 se le asignará al argumento "otroNumero" y como estamos ejecutando
     // la función nos devuelve lo que tiene la suma de los dos números.
-    expect(funcionParaSumar(1, 3)).toBe(RellenameCorrectamente)
-    expect(funcionParaSumar(6, 8)).toBe(RellenameCorrectamente)
-    expect(funcionParaSumar(123431, 23451)).toBe(RellenameCorrectamente)
-    expect(funcionParaSumar(2.34, 10)).toBe(RellenameCorrectamente)
+
+    expect(funcionParaSumar(1, 3)).toBe(4)
+    expect(funcionParaSumar(6, 8)).toBe(14)
+    expect(funcionParaSumar(123431, 23451)).toBe(146882)
+    expect(funcionParaSumar(2.34, 10)).toBe(12.34)
     // Nota: Hay más maneras de definir funciones, las veremos ;)
   })
 
@@ -38,11 +53,15 @@ describe('8-Funciones.js', () => {
     }
 
     let resultado = operacionCompleja(20, 667)
+
     // esta variable ya es como cualquier otra, pero en lugar de contener
+
     // el resultado de una operación directamente, se guarda el resultado
     //  de ejecutar nuestra función.
-    expect(resultado).toBe(RellenameCorrectamente)
-    expect(resultado + 1).toBe(RellenameCorrectamente)
+
+    
+    expect(resultado).toBe(40)
+    expect(resultado + 1).toBe(41)
 
     let otroResultado = operacionCompleja(89, 123)
 
